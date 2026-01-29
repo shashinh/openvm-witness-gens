@@ -33,8 +33,7 @@ pub fn trace_gen(
     //width metadata for later
     let air_width = <Rv32BaseAluAir as BaseAir<F>>::width(&harness.air);
     let adapter_width = <Rv32BaseAluAdapterAir as BaseAir<F>>::width(&harness.air.adapter);
-    let core_width = <BaseAluCoreAir<RV32_REGISTER_NUM_LIMBS, RV32_CELL_BITS> as BaseAir<F>>::width(&harness.air.core);    //extract the 
-
+    let core_width = <BaseAluCoreAir<RV32_REGISTER_NUM_LIMBS, RV32_CELL_BITS> as BaseAir<F>>::width(&harness.air.core);
 
     //initialize inputs for execution record
     //we don't need the rng since all inputs are deterministic, but we need to pass it to the function
