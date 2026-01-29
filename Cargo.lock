@@ -1148,10 +1148,12 @@ checksum = "42f5e15c9953c5e4ccceeb2e7382a716482c34515315f7b03532b8b4e8393d2d"
 [[package]]
 name = "openvm-aux"
 version = "0.1.0"
+source = "git+https://github.com/shashinh/openvm#3556ea292923fab7ef5b686dbaa2271e166ae254"
 
 [[package]]
 name = "openvm-circuit"
 version = "1.4.2"
+source = "git+https://github.com/shashinh/openvm#3556ea292923fab7ef5b686dbaa2271e166ae254"
 dependencies = [
  "abi_stable",
  "backtrace",
@@ -1187,6 +1189,7 @@ dependencies = [
 [[package]]
 name = "openvm-circuit-derive"
 version = "1.4.2"
+source = "git+https://github.com/shashinh/openvm#3556ea292923fab7ef5b686dbaa2271e166ae254"
 dependencies = [
  "itertools 0.14.0",
  "proc-macro2",
@@ -1197,6 +1200,7 @@ dependencies = [
 [[package]]
 name = "openvm-circuit-primitives"
 version = "1.4.2"
+source = "git+https://github.com/shashinh/openvm#3556ea292923fab7ef5b686dbaa2271e166ae254"
 dependencies = [
  "derive-new 0.6.0",
  "itertools 0.14.0",
@@ -1212,6 +1216,7 @@ dependencies = [
 [[package]]
 name = "openvm-circuit-primitives-derive"
 version = "1.4.2"
+source = "git+https://github.com/shashinh/openvm#3556ea292923fab7ef5b686dbaa2271e166ae254"
 dependencies = [
  "itertools 0.14.0",
  "quote",
@@ -1230,6 +1235,7 @@ dependencies = [
 [[package]]
 name = "openvm-custom-insn"
 version = "0.1.0"
+source = "git+https://github.com/shashinh/openvm#3556ea292923fab7ef5b686dbaa2271e166ae254"
 dependencies = [
  "proc-macro2",
  "quote",
@@ -1239,6 +1245,7 @@ dependencies = [
 [[package]]
 name = "openvm-derive"
 version = "0.1.0"
+source = "git+https://github.com/shashinh/openvm#3556ea292923fab7ef5b686dbaa2271e166ae254"
 dependencies = [
  "proc-macro2",
  "quote",
@@ -1248,6 +1255,7 @@ dependencies = [
 [[package]]
 name = "openvm-instructions"
 version = "1.4.2"
+source = "git+https://github.com/shashinh/openvm#3556ea292923fab7ef5b686dbaa2271e166ae254"
 dependencies = [
  "backtrace",
  "derive-new 0.6.0",
@@ -1264,6 +1272,7 @@ dependencies = [
 [[package]]
 name = "openvm-instructions-derive"
 version = "1.4.2"
+source = "git+https://github.com/shashinh/openvm#3556ea292923fab7ef5b686dbaa2271e166ae254"
 dependencies = [
  "quote",
  "syn 2.0.114",
@@ -1272,6 +1281,7 @@ dependencies = [
 [[package]]
 name = "openvm-platform"
 version = "1.4.2"
+source = "git+https://github.com/shashinh/openvm#3556ea292923fab7ef5b686dbaa2271e166ae254"
 dependencies = [
  "openvm-custom-insn",
  "openvm-rv32im-guest",
@@ -1280,6 +1290,7 @@ dependencies = [
 [[package]]
 name = "openvm-poseidon2-air"
 version = "1.4.2"
+source = "git+https://github.com/shashinh/openvm#3556ea292923fab7ef5b686dbaa2271e166ae254"
 dependencies = [
  "derivative",
  "lazy_static",
@@ -1297,6 +1308,7 @@ dependencies = [
 [[package]]
 name = "openvm-rv32im-circuit"
 version = "1.4.2"
+source = "git+https://github.com/shashinh/openvm#3556ea292923fab7ef5b686dbaa2271e166ae254"
 dependencies = [
  "cfg-if",
  "derive-new 0.6.0",
@@ -1321,6 +1333,7 @@ dependencies = [
 [[package]]
 name = "openvm-rv32im-guest"
 version = "1.4.2"
+source = "git+https://github.com/shashinh/openvm#3556ea292923fab7ef5b686dbaa2271e166ae254"
 dependencies = [
  "openvm-custom-insn",
  "p3-field",
@@ -1330,6 +1343,7 @@ dependencies = [
 [[package]]
 name = "openvm-rv32im-transpiler"
 version = "1.4.2"
+source = "git+https://github.com/shashinh/openvm#3556ea292923fab7ef5b686dbaa2271e166ae254"
 dependencies = [
  "openvm-instructions",
  "openvm-instructions-derive",
@@ -1410,6 +1424,7 @@ dependencies = [
 [[package]]
 name = "openvm-transpiler"
 version = "1.4.2"
+source = "git+https://github.com/shashinh/openvm#3556ea292923fab7ef5b686dbaa2271e166ae254"
 dependencies = [
  "elf",
  "eyre",

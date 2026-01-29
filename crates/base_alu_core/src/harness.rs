@@ -7,7 +7,7 @@ use openvm_circuit::openvm_stark_sdk::openvm_stark_backend::p3_air::BaseAir;
 use openvm_circuit::openvm_stark_sdk::openvm_stark_backend::p3_matrix::Matrix;
 use openvm_circuit::openvm_stark_sdk::openvm_stark_backend::p3_matrix::dense::RowMajorMatrix;
 use openvm_circuit::openvm_stark_sdk::p3_baby_bear::BabyBear;
-use openvm_rv32im_circuit::adapters::{RV32_CELL_BITS, Rv32BaseAluAdapterAir};
+use openvm_rv32im_circuit::adapters::{RV32_CELL_BITS, Rv32BaseAluAdapterAir, Rv32BaseAluAdapterCols};
 use openvm_rv32im_circuit::{BaseAluCoreAir, BaseAluCoreCols, Rv32BaseAluAir, Rv32BaseAluChip};
 use openvm_rv32im_circuit::{Rv32BaseAluExecutor, adapters::Rv32BaseAluAdapterExecutor};
 use openvm_rv32im_transpiler::BaseAluOpcode;
@@ -20,7 +20,7 @@ pub const MAX_INS_CAPACITY: usize = 128;
 pub type F = BabyBear;
 pub type Harness = TestChipHarness<F, Rv32BaseAluExecutor, Rv32BaseAluAir, Rv32BaseAluChip<F>>;
 
-pub fn build_execution_record(
+pub fn trace_gen(
     opcode: BaseAluOpcode,
     b: Option<[u8; RV32_REGISTER_NUM_LIMBS]>,
     c: Option<[u8; RV32_REGISTER_NUM_LIMBS]>,
@@ -76,9 +76,4 @@ pub fn build_execution_record(
     let core_cols: &BaseAluCoreCols<_, RV32_REGISTER_NUM_LIMBS, RV32_CELL_BITS> = core_row.borrow();
 
     println!("core cols: {:?}", core_cols);
-
-
-
-
-
 }

@@ -1,4 +1,4 @@
-use base_alu_core::harness::build_execution_record;
+use base_alu_core::harness::trace_gen;
 use openvm_rv32im_transpiler::BaseAluOpcode;
 
 fn main() {
@@ -7,5 +7,5 @@ fn main() {
     let c = Some([0xF0, 0xDE, 0xBC, 0x00]);
     let is_imm = Some(false);
     
-    build_execution_record(opcode, b, c, is_imm);
+    trace_gen(opcode, b, c, is_imm);
 }
