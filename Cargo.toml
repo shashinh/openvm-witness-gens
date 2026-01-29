@@ -1,0 +1,18 @@
+[workspace]
+
+members = ["crates/base_alu_core" ]
+
+
+[workspace.dependencies]
+openvm-circuit = { git = "https://github.com/shashinh/openvm", package = "openvm-circuit", feature = "test-utils" }
+openvm-rv32im-transpiler = { git = "https://github.com/shashinh/openvm", package = "openvm-rv32im-transpiler" }
+openvm-rv32im-circuit = { git = "https://github.com/shashinh/openvm", package = "openvm-rv32im-circuit" }
+openvm-circuit-primitives = { git = "https://github.com/shashinh/openvm", package = "openvm-circuit-primitives", feature = "test-utils" }
+
+[patch."https://github.com/shashinh/openvm"]
+#local patch
+openvm-circuit = { path = "/home/shashin/projects/zk-fuzz/sh-openvm/crates/vm/" }
+openvm-circuit-primitives = { path = "/home/shashin/projects/zk-fuzz/sh-openvm/crates/circuits/primitives/" }
+openvm-instructions = { path = "/home/shashin/projects/zk-fuzz/sh-openvm/crates/toolchain/instructions/" }
+openvm-rv32im-circuit = { path = "/home/shashin/projects/zk-fuzz/sh-openvm/extensions/rv32im/circuit/" }
+openvm-rv32im-transpiler = { path = "/home/shashin/projects/zk-fuzz/sh-openvm/extensions/rv32im/transpiler/" }
