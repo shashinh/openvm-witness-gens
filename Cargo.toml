@@ -1,6 +1,6 @@
 [workspace]
 
-members = ["crates/base_alu_core" ]
+members = ["crates/base_alu_core" , "crates/base_alu_full"]
 
 
 [workspace.dependencies]

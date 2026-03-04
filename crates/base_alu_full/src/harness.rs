@@ -70,9 +70,13 @@ pub fn trace_gen(
 
     // println!("trace row: {:#?}", trace_row);
 
-    let (_adapter_row, core_row) = trace_row.split_at(adapter_width);
+    let (adapter_row, core_row) = trace_row.split_at(adapter_width);
+
+    println!("trace row: {:#?}", trace_row);
 
     let core_cols: &BaseAluCoreCols<_, RV32_REGISTER_NUM_LIMBS, RV32_CELL_BITS> = core_row.borrow();
+    let adapter_cols: &Rv32BaseAluAdapterCols<_> = adapter_row.borrow();
 
-    println!("core cols: {:#?}", core_cols);
+    // println!("core cols: {:#?}", core_cols);
+    // println!("adapter cols: {:#?}", adapter_cols);
 }

@@ -228,6 +228,17 @@ dependencies = [
 ]
 
 [[package]]
+name = "base_alu_full"
+version = "0.1.0"
+dependencies = [
+ "openvm-circuit",
+ "openvm-circuit-primitives",
+ "openvm-rv32im-circuit",
+ "openvm-rv32im-transpiler",
+ "rand",
+]
+
+[[package]]
 name = "bitcode"
 version = "0.6.9"
 source = "registry+https://github.com/rust-lang/crates.io-index"
